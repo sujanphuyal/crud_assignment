@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Record</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+</head>
+<body>
+<div class="container-fluid text-center">
+    <h1> Welcome to Student Management System...!!</h1>
+    <button type="button" class="btn btn-info m-4" onclick="detailPage()">Get Started</button>
+</div>
+<script type="text/javascript">
+    function detailPage(){
+    window.location = "[[@{/users}]]";
+    }
+</script>
+</body>
+</html>
